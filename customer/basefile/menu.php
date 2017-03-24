@@ -60,7 +60,7 @@
 					<a href="index.html" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							Ace Admin
+							E-STATIONERY
 						</small>
 					</a>
 				</div>
@@ -72,20 +72,16 @@
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Jason
+									<?php
+										session_start();
+										echo $_SESSION['fname'];
+									?>
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
 
 							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-								<li>
-									<a href="#">
-										<i class="ace-icon fa fa-cog"></i>
-										Settings
-									</a>
-								</li>
-
 								<li>
 									<a href="profile.html">
 										<i class="ace-icon fa fa-user"></i>
@@ -96,7 +92,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="index.php">
 										<i class="ace-icon fa fa-power-off"></i>
 										Logout
 									</a>

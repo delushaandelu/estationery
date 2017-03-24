@@ -1,30 +1,28 @@
 <?php
-if(isset($_GET['reg'])){
-include('basefile/dbConfig.php');
-   $fullname = $_POST['fullname'];
-//    $email = $_POST['email'];
-//    $address = $_POST['address'];
-//    $nic = $_POST['nic'];
-//    $tele = $_POST['tele'];
-//    $username = $_POST['username'];
-//    $password = $_POST['password'];
-   
-    $sql="INSERT INTO user (fullname,status) VALUES ('$fullname', '1')";
-    
+if(isset($_POST["reg"])){
+    include('basefile/dbConfig.php');
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $nic = $_POST['nic'];
+    $tele = $_POST['tele'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    //query
+    $sql="INSERT INTO user (fullname,email,address,nic,tele,username,password,status) 
+    VALUES ('$fullname','$email','$address','$nic','$tele','$username','$password','Active')";
+    $result = $db->query($sql);
 
-if (mysqli_query($db, $sql) === TRUE) {
-        // echo'<script>';
-        // echo"alert('We will give your account authentication soon! Thank you')";
-        // echo'</script>';
-        header('location:index.php');
-    } else {
-
+    if($result){
         echo'<script>';
-        echo"alert('Error in Submition')";
+        echo"alert('SUCCESS | User Information Added')";
         echo'</script>';
-        
+        header("location:index.php");
     }
-
-    mysqli_close($db);
+    else{
+        echo'<script>';
+        echo"alert('FAILED | User Information Not Added')";
+        echo'</script>';
+    }
 }
-    ?>
+?> 
