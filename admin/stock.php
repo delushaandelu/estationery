@@ -41,13 +41,21 @@
                                             </div>
                                             
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label">Company</label>
-                                                <div class="col-md-9">                                            
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                        <input type="text" class="form-control" name="brand"/>
-                                                    </div>                                            
-                                                    <span class="help-block">Company Name Here</span>
+                                                <label class="col-md-3 control-label">Item </label>
+                                                <div class="col-md-9">                                                                                            
+                                                    <select class="form-control select" name="brand">
+                                                        <?php 
+                                                        include("basefile/dbConfig.php");
+                                                        $sql= "SELECT * FROM brand ";
+                                                        $result = $db->query($sql);  
+                                                        while($row = $result->fetch_assoc()) {
+                                                    ?>
+                                                        <option><?php echo $row['company'] ?></option>
+                                                    <?php
+                                                        }
+                                                    ?>
+                                                    </select>
+                                                    <span class="help-block">Select item name here</span>
                                                 </div>
                                             </div>
                                             
@@ -147,11 +155,11 @@
                                             $price = $_POST['price'];
                                             $size = $_POST['size'];
                                             $rule = $_POST['rule'];
-                                           // $ty = $_POST['ty'];
+                                            $ty = $_POST['ty'];
                                             
                                             //query
-                                            $sql= "INSERT INTO item(name,company,pages,cost,price,size,rule) 
-                                            VALUES ('$name','$brand','$pages','$cost','$price','$size','$rule')";
+                                            $sql= "INSERT INTO item(name,company,pages,cost,price,size,rule,type) 
+                                            VALUES ('$name','$brand','$pages','$cost','$price','$size','$rule','$ty')";
                                             $result = $db->query($sql);
                                     
                                             if($result){
@@ -172,57 +180,7 @@
                             
                         </div>
                     </div>           
-        <div class="row">
-                        <div class="col-md-12">
-
-                            <!-- START DEFAULT DATATABLE -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">                                
-                                    <h3 class="panel-title">Default</h3>
-                                    <ul class="panel-controls">
-                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
-                                    </ul>                                
-                                </div>
-                                <div class="panel-body">
-                                    <table class="table datatable">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>NAME</th>  
-                                                <th>Action</th>                                              
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <?php 
-                                            include("basefile/dbConfig.php");
-                                        
-                                            $sql= "SELECT * FROM itemname ";
-                                            $result = $db->query($sql);  
-                                            while($row = $result->fetch_assoc()) {
-                                        ?>
-                                            <tr>
-                                                <td><?php echo $row['id'] ?></td>
-                                                <td><?php echo $row['name'] ?></td>
-                                                <td><button class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='additem.php?id=<?php echo $row['id'] ?>'"></i></button></td>
-                                            </tr>
-                                           <?php
-                                            }
-                                           ?>
-                                        </tbody>
-                                    </table>
-                                    <?php
-                                    if(isset($_GET['id'])){
-                                        $id = $_GET['id'];
-                                        $sql= "delete from itemname where id = '$id'";
-                                        mysqli_query($db,$sql);
-                                        echo'<script>';
-                                        echo"alert('Success | Record Deleted Successfully!')";
-                                        echo'</script>';
-                                    }
-                                    ?>
-                                </div>
+        
    
 </div>
 <!-- END PAGE CONTENT WRAPPER -->                                

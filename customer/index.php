@@ -192,49 +192,49 @@
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Full Name" id="fullname" />
+															<input type="text" class="form-control" placeholder="Full Name" name="fullname" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control" placeholder="Email" id="email" />
+															<input type="email" class="form-control" placeholder="Email" name="email" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Address" id="address" />
+															<input type="text" class="form-control" placeholder="Address" name="address" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="NIC Number" id="nic" />
+															<input type="text" class="form-control" placeholder="NIC Number" name="nic" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Telephone Number" id="tele" />
+															<input type="text" class="form-control" placeholder="Telephone Number" name="tele" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" id="username" />
+															<input type="text" class="form-control" placeholder="Username" name="username" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" id="password" />
+															<input type="password" class="form-control" placeholder="Password" name="password" />
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
 													</label>
@@ -262,7 +262,7 @@
 															<span class="bigger-110">Reset</span>
 														</button>
 
-														<button type="submit" id="reg" value="Register" class="width-65 pull-right btn btn-sm btn-success">
+														<button type="submit" name="reg" value="Register" class="width-65 pull-right btn btn-sm btn-success">
 															
 
 															<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
