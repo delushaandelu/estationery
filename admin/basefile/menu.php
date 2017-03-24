@@ -23,11 +23,15 @@
                 <!-- START X-NAVIGATION -->
                 <ul class="x-navigation">
                     <li class="xn-logo">
-                        <a href="index.html">ADMIN</a>
+                        <a href="index.html">ADMIN
+                        </a>
                         <a href="#" class="x-navigation-control"></a>
                     </li>
                     
-                    <li class="xn-title">Navigation</li>
+                    <li class="xn-title"><center>Welcome <?php
+                                                session_start();
+                                                echo $_SESSION['fname'];
+                                            ?></center></li>
                     <li class="active">
                         <a href="home.php"><span class="fa fa-desktop"></span> <span class="xn-text">Home</span></a>                        
                     </li>                    
