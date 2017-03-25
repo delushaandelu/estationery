@@ -1,17 +1,16 @@
 <?php
-    //session_start();
+    session_start();
     if(isset($_POST['log'])){
         require ('basefile/dbConfig.php');
         $username = $_POST['user'];
         $password = $_POST['pass'];
-
         $_SESSION['user'] = $username;
         
         $res1 =  mysqli_fetch_assoc(mysqli_query($db,"select fullname from user where username = '$username' "));
         $_SESSION['fname']= $res1['fullname'];                     
 
         $res2 =  mysqli_fetch_assoc(mysqli_query($db,"select id from user where username = '$username' "));
-        $_SESSION['c_id']= $res2['id'];       
+        $_SESSION['cs_id']= $res2['id'];       
 
         $result = mysqli_query($db, 'select * from user where username="'.$username.'" and password="'.$password.'"  ');
         if (mysqli_num_rows($result)==1){

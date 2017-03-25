@@ -72,7 +72,11 @@
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-																	</span>
+									<?php
+										session_start();
+										echo $_SESSION['fname'];
+									?>
+									</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
@@ -184,7 +188,7 @@
 									</li>
 
 									<li class="">
-										<a href="two-menu-1.html">
+										<a href="DoubleRuleBook.php">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Double Rule
 										</a>
@@ -193,7 +197,7 @@
 									</li>
 
 									<li class="">
-										<a href="two-menu-2.html">
+										<a href="CRBook.php">
 											<i class="menu-icon fa fa-caret-right"></i>
 											CR Books
 										</a>
@@ -202,7 +206,7 @@
 									</li>
 
 									<li class="">
-										<a href="mobile-menu-1.html">
+										<a href="DrawingsBook.php">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Drawings Books
 										</a>
@@ -211,7 +215,7 @@
 									</li>
 
 									<li class="">
-										<a href="mobile-menu-1.html">
+										<a href="SquareRuleBook.php">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Square Rule
 										</a>
@@ -222,7 +226,7 @@
 							</li>
 
 							<li class="">
-								<a href="typography.html">
+								<a href="pens.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Pens
 								</a>
@@ -231,7 +235,7 @@
 							</li>
 
 							<li class="">
-								<a href="elements.html">
+								<a href="Pencils.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Pencils
 								</a>
@@ -240,7 +244,7 @@
 							</li>
 
 							<li class="">
-								<a href="buttons.html">
+								<a href="HalfSheets.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Half Sheets
 								</a>
@@ -249,7 +253,7 @@
 							</li>
 
 							<li class="">
-								<a href="content-slider.html">
+								<a href="FoolscapPapers.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Foolscap Papers
 								</a>
@@ -258,7 +262,7 @@
 							</li>
 
 							<li class="">
-								<a href="treeview.html">
+								<a href="A4Sheets.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									A4 Sheets
 								</a>
@@ -267,7 +271,7 @@
 							</li>
 
 							<li class="">
-								<a href="jquery-ui.html">
+								<a href="PolytheneCover.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Polythene Covers
 								</a>
@@ -276,7 +280,7 @@
 							</li>
 
 							<li class="">
-								<a href="nestable-list.html">
+								<a href="StickerCards.php ">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Sticker Cards
 								</a>
@@ -285,13 +289,70 @@
 							</li>
 							
 							<li class="">
-								<a href="nestable-list.html">
+								<a href="Rulers.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Rulers
 								</a>
 
 								<b class="arrow"></b>
 							</li>
+
+							<li class="">
+								<a href="case.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pencil Pen case
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="Erasers.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Erasers
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="HighlighterPens.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Highlighter Pens
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="StickerNotes.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Sticker Notes
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="BristleBoards.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Bristle Boards
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="ClayBoxes.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Clay Boxes
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+							
 							
 						</ul>
 					</li>
@@ -308,7 +369,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="tables.html">
+								<a href="viewCart.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									View Cart
 								</a>
@@ -331,7 +392,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="form-elements.html">
+								<a href="vieworders.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									View Ordes
 								</a>
