@@ -72,11 +72,7 @@
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									<?php
-										session_start();
-										echo $_SESSION['fname'];
-									?>
-								</span>
+																	</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
@@ -179,7 +175,7 @@
 
 								<ul class="submenu">
 									<li class="">
-										<a href="top-menu.html">
+										<a href="NoteBooks.php">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Single Rule
 										</a>
