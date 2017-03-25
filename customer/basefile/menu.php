@@ -146,7 +146,7 @@
 
 				<ul class="nav nav-list">
 					<li class="">
-						<a href="index.html">
+						<a href="home.php">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Home </span>
 						</a>

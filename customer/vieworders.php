@@ -7,13 +7,13 @@
 		<!-- PAGE CONTENT BEGINS -->
 <div class="row">
 									<div class="col-xs-12">
-										<h3 class="header smaller lighter blue">jQuery dataTables</h3>
+										<h3 class="header smaller lighter blue">Your Purchase Orders</h3>
 
 										<div class="clearfix">
 											<div class="pull-right tableTools-container"></div>
 										</div>
 										<div class="table-header">
-											Results for "Latest Registered Domains"
+											Manage Your Purchase Orders
 										</div>
 
 										<!-- div.table-responsive -->
