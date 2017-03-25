@@ -8,7 +8,10 @@
         $_SESSION['user'] = $username;
         
         $res1 =  mysqli_fetch_assoc(mysqli_query($db,"select fullname from user where username = '$username' "));
-       // $_SESSION['fname']= $res1['fullname'];                          
+        $_SESSION['fname']= $res1['fullname'];                     
+
+        $res2 =  mysqli_fetch_assoc(mysqli_query($db,"select id from user where username = '$username' "));
+        $_SESSION['c_id']= $res2['id'];       
 
         $result = mysqli_query($db, 'select * from user where username="'.$username.'" and password="'.$password.'"  ');
         if (mysqli_num_rows($result)==1){

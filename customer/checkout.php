@@ -14,8 +14,9 @@ if($cart->total_items() <= 0){
     header("Location: index.php");
 }
 
+$_SESSION['c_id'] = $cid
 // set customer ID in session
-$_SESSION['sessCustomerID'] = 1;
+$_SESSION['sessCustomerID'] = $cid;
 
 // get customer details by session customer ID
 $query = $db->query("SELECT * FROM user WHERE id = ".$_SESSION['sessCustomerID']);
