@@ -50,10 +50,13 @@
                         <a href="viewstock.php"><span class="fa fa-pencil"></span> <span class="xn-text">View Stock</span></a>
                     </li>
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Manage Orders</span></a>
+                        <a href="mngorders.php"><span class="fa fa-pencil"></span> <span class="xn-text">Manage Orders</span></a>
                     </li>
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Delivery</span></a>
+                        <a href="delorder.php"><span class="fa fa-pencil"></span> <span class="xn-text">Delivery</span></a>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="received.php"><span class="fa fa-pencil"></span> <span class="xn-text">Recevied Orders</span></a>
                     </li>
                     <li class="xn-openable">
                         <a href="manageadmin.php"><span class="fa fa-pencil"></span> <span class="xn-text">Manage Admin</span></a>
