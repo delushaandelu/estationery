@@ -74,14 +74,10 @@
 
 														<td>
 															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
+																<a class="blue" onclick="location.href='view.php?ID=<?php echo $row['id'] ?>'">
 																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
 																</a>
-
-																<a class="green" href="#">
-																	<i class="fa fa-check-square" aria-hidden="true"></i>
-																</a>
-
+															
 																<a class="red" href="#">
 																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
 																</a>

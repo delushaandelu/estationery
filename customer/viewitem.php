@@ -29,17 +29,9 @@
 																<span class="lbl"></span>
 															</label>
 														</th>
-														<th>Order ID</th>
-														<th>Price</th>
-														<th class="hidden-480">Ordered Date</th>
-
-														<th>
-															<i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-															Modified Date
-														</th>
-														<th class="hidden-480">Status</th>
-
-														<th></th>
+														<th>Product ID</th>
+														<th>OTY</th>
+														
 													</tr>
 												</thead>
 
@@ -47,9 +39,10 @@
 
 												<?php
 													$cid = $_SESSION['cs_id'];
-													include 'dbConfig.php';
+													$id = $_GET['ID'];
+													include 'basefile/dbConfig.php';
 													//get rows query
-													$query = $db->query("SELECT * FROM orders where customer_id='$cid' ");
+													$query = $db->query("SELECT * FROM order_items where order_id='$id' ");
 													if($query->num_rows > 0){ 
 														while($row = $query->fetch_assoc()){
 												?>
@@ -62,65 +55,9 @@
 														</td>
 
 														<td>
-															<a href="#"><?php echo $row["id"]; ?></a>
+															<?php echo $row["product_id"]; ?>
 														</td>
-														<td><?php echo 'Rs. '.$row["total_price"]; ?></td>
-														<td class="hidden-480"><?php echo $row["created"]; ?></td>
-														<td><?php echo $row["modified"]; ?></td>
-
-														<td class="hidden-480">
-															<span class="label label-sm label-warning"><?php echo $row["delivery"]; ?></span>
-														</td>
-
-														<td>
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a name='update' onclick="location.href='viewitem.php?ID=<?php echo $row['id'] ?>'" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" onclick="location.href='update.php?ID=<?php echo $row['id'] ?>'">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-																
-																<a class="red" onclick="location.href='invoice.php?ID=<?php echo $row['id'] ?>'">
-																	<i class="fa fa-file-o" aria-hidden="true"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
+														<td><?php echo $row["quantity"]; ?></td>
 													</tr>
 													<?php  
 													} 

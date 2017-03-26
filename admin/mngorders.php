@@ -74,11 +74,11 @@
 
 														<td>
 															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
+																<a class="blue" onclick="location.href='view.php?ID=<?php echo $row['id'] ?>'" >
 																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
 																</a>
 
-																<a class="green" href="#">
+																<a class="green" onclick="location.href='mngorders.php?ID=<?php echo $row['id'] ?>'" >
 																	<i class="fa fa-check-square" aria-hidden="true"></i>
 																</a>
 
@@ -135,6 +135,18 @@
 		<!-- PAGE CONTENT ENDS -->
 	</div><!-- /.col -->
 </div><!-- /.row -->
+<?php 
+include("basefile/dbConfig.php");
+$id = $_GET['ID'];   
+$sql = "UPDATE orders SET delivery='On Delivery' WHERE id='$id' ";
+if ($db->query($sql) === TRUE) {
+} else {
+	echo "<script>";
+	echo "alert('Error | Status Updated Failed')";
+	echo "</script>";
+}
+
+?>
 
 </div>
 <!-- END PAGE CONTENT WRAPPER -->                                
