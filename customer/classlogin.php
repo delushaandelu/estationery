@@ -4,6 +4,7 @@
         require ('basefile/dbConfig.php');
         $username = $_POST['user'];
         $password = $_POST['pass'];
+        ///session creating
         $_SESSION['user'] = $username;
         
         $res1 =  mysqli_fetch_assoc(mysqli_query($db,"select fullname from user where username = '$username' "));
