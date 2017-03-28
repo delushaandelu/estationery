@@ -24,10 +24,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             
-                            <h6><?php echo 'Pages : '.$row["pages"]; ?></h6>
-                            <h6><?php echo 'Size : '.$row["size"]; ?></h6>
-                            <h6><?php echo 'Rule Type : '.$row["rule"]; ?></h6>
-                            <h6><?php echo 'Book Type : '.$row["type"]; ?></h6>
+                            <h6><?php echo 'Color : '.$row["color"]; ?></h6>
                             <h6><?php echo 'Rs. '.$row["price"].' LKR'; ?></h6>
                         </div>
                         <div class="col-md-6">
