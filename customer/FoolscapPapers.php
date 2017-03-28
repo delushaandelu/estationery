@@ -23,7 +23,6 @@
                     <h3 class="list-group-item-text"><?php echo $row["company"]; ?></h3>
                     <div class="row">
                         <div class="col-md-6">
-                            <h6><?php echo 'Rule Type : '.$row["rule"]; ?></h6>
                             <h6><?php echo 'Rs. '.$row["price"].' LKR'; ?></h6>
                         </div>
                         <div class="col-md-6">

@@ -99,39 +99,20 @@
                                                 <label class="col-md-3 control-label">Size</label>
                                                 <div class="col-md-9">                                                                                            
                                                     <select class="form-control select" name="size">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
-                                                        <option>Option 4</option>
-                                                        <option>Option 5</option>
+                                                        <option>A4</option>
+                                                        <option>A5</option>
+                                                        <option>A6</option>
                                                     </select>
                                                     <span class="help-block">Size of the book</span>
                                                 </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label class="col-md-3 control-label">Rule Type</label>
-                                                <div class="col-md-9">                                                                                            
-                                                    <select class="form-control select" name="rule">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
-                                                        <option>Option 4</option>
-                                                        <option>Option 5</option>
-                                                    </select>
-                                                    <span class="help-block">Rule Type of the book</span>
-                                                </div>
-                                            </div>
+                                            </div>                                            
                                             
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" >Type</label>
                                                 <div class="col-md-9">                                                                                            
                                                     <select class="form-control select" name="ty">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
-                                                        <option>Option 4</option>
-                                                        <option>Option 5</option>
+                                                        <option>GSM 120</option>
+                                                        <option>GSM 80</option>
                                                     </select>
                                                     <span class="help-block">Type of the book</span>
                                                 </div>
