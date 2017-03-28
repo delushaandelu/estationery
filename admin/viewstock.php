@@ -30,6 +30,7 @@
                                                 <th>SIZE</th>
                                                 <th>RULE</th>
                                                 <th>TYPE</th>
+                                                <th>COLOR</th>
                                                 <th>ACTION</th>                                             
                                             </tr>
                                         </thead>
@@ -51,6 +52,7 @@
                                                 <td><?php echo $row['size'] ?></td>
                                                 <td><?php echo $row['rule'] ?></td>
                                                 <td><?php echo $row['type'] ?></td>
+                                                <td><?php echo $row['color'] ?></td>
                                                 <td><button class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='viewstock.php?id=<?php echo $row['id'] ?>'"></i></button></td>
                                             </tr>
                                            <?php

@@ -137,6 +137,18 @@
                                                 </div>
                                             </div>
                                             
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Color</label>
+                                                <div class="col-md-9">                                            
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                        <input type="text" class="form-control" name="color"/>
+                                                    </div>                                            
+                                                    <span class="help-block">Color of the Product</span>
+                                                </div>
+                                            </div>
+                                            
+                                            
                                         </div>
                                         
                                     </div>
@@ -156,10 +168,11 @@
                                             $size = $_POST['size'];
                                             $rule = $_POST['rule'];
                                             $ty = $_POST['ty'];
+                                            $color = $_POST['color'];
                                             
                                             //query
-                                            $sql= "INSERT INTO item(name,company,pages,cost,price,size,rule,type) 
-                                            VALUES ('$name','$brand','$pages','$cost','$price','$size','$rule','$ty')";
+                                            $sql= "INSERT INTO item(name,company,pages,cost,price,size,rule,type,color) 
+                                            VALUES ('$name','$brand','$pages','$cost','$price','$size','$rule','$ty','$color')";
                                             $result = $db->query($sql);
                                     
                                             if($result){
