@@ -46,7 +46,7 @@
 												<tbody>
 
 												<?php
-													$cid = $_SESSION['cs_id'];
+													
 													include 'basefile/dbConfig.php';
 													//get rows query
 													$query = $db->query("SELECT * FROM orders where delivery='Received' ");
