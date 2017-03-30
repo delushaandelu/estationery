@@ -28,7 +28,8 @@
                                                 <th>COST</th>
                                                 <th>PRICE</th>
                                                 <th>SIZE</th>
-                                                <th>RULE</th>
+                                                <th>PURPOSE</th>
+                                                <th>SNAME</th>
                                                 <th>TYPE</th>
                                                 <th>COLOR</th>
                                                 <th>ACTION</th>                                             
@@ -50,7 +51,8 @@
                                                 <td><?php echo $row['cost'] ?></td>
                                                 <td><?php echo $row['price'] ?></td>
                                                 <td><?php echo $row['size'] ?></td>
-                                                <td><?php echo $row['rule'] ?></td>
+                                                <td><?php echo $row['purpose'] ?></td>
+                                                <td><?php echo $row['sname'] ?></td>
                                                 <td><?php echo $row['type'] ?></td>
                                                 <td><?php echo $row['color'] ?></td>
                                                 <td><button class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='viewstock.php?id=<?php echo $row['id'] ?>'"></i></button></td>

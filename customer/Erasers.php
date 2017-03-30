@@ -28,6 +28,7 @@
                             <h6><?php echo 'Rs. '.$row["price"].' LKR'; ?></h6>
                         </div>
                         <div class="col-md-6">
+                             <img src='<?php echo $row["img"]; ?>' height="40%" width="40%" style="background-attachment: fixed;" >
                             <a class="btn btn-success" href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>">Add to cart</a>
                         </div>.
                     </div>

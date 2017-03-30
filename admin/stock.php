@@ -41,7 +41,7 @@
                                             </div>
                                             
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label">Item </label>
+                                                <label class="col-md-3 control-label">Company </label>
                                                 <div class="col-md-9">                                                                                            
                                                     <select class="form-control select" name="brand">
                                                         <?php 
@@ -80,6 +80,25 @@
                                                     <span class="help-block">Cost amount of the product</span>
                                                 </div>
                                             </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Purpose</label>
+                                                <div class="col-md-9">                                                                                            
+                                                    <select class="form-control select" name="pur">
+                                                        <option>Stationery</option>
+                                                        <option>Activity</option>
+                                                    </select>
+                                                    <span class="help-block">Size of the book</span>
+                                                </div>
+                                            </div>      
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Item Name</label>
+                                                <div class="col-md-9">                                                                                            
+                                                    <input type="text" class="form-control" name="sname"/>
+                                                    <span class="help-block">Name of the item..(If the item is Activity used item)</span>
+                                                </div>
+                                            </div>       
                                             
                                         </div>
                                         <div class="col-md-6">
@@ -128,6 +147,17 @@
                                                     <span class="help-block">Color of the Product</span>
                                                 </div>
                                             </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Image</label>
+                                                <div class="col-md-9">                                            
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                        <input type="text" class="form-control" name="img"/>
+                                                    </div>                                            
+                                                    <span class="help-block">Copy paste the link of the image from GOOGLE</span>
+                                                </div>
+                                            </div>
                                             
                                             
                                         </div>
@@ -145,15 +175,17 @@
                                             $brand = $_POST['brand'];
                                             $pages = $_POST['pages'];
                                             $cost = $_POST['cost'];
+                                            $sname = $_POST['sname'];
+                                            $pur = $_POST['pur'];
                                             $price = $_POST['price'];
                                             $size = $_POST['size'];
-                                            $rule = $_POST['rule'];
                                             $ty = $_POST['ty'];
                                             $color = $_POST['color'];
+                                            $img =$_POST['img'];
                                             
                                             //query
-                                            $sql= "INSERT INTO item(name,company,pages,cost,price,size,rule,type,color) 
-                                            VALUES ('$name','$brand','$pages','$cost','$price','$size','$rule','$ty','$color')";
+                                            $sql= "INSERT INTO item(name,company,pages,cost,sname,purpose,price,size,type,color,img) 
+                                            VALUES ('$name','$brand','$pages','$cost','$sname','$pur','$price','$size','$ty','$color','$img')";
                                             $result = $db->query($sql);
                                     
                                             if($result){
