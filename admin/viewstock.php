@@ -55,7 +55,10 @@
                                                 <td><?php echo $row['sname'] ?></td>
                                                 <td><?php echo $row['type'] ?></td>
                                                 <td><?php echo $row['color'] ?></td>
-                                                <td><button class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='viewstock.php?id=<?php echo $row['id'] ?>'"></i></button></td>
+                                                <td>
+                                                <button class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='viewstock.php?id=<?php echo $row['id'] ?>'"></i></button>
+                                                <button class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true" onclick="location.href='updatestock.php?id=<?php echo $row['id'] ?>'"></i></button>
+                                                </td>
                                             </tr>
                                            <?php
                                             }
