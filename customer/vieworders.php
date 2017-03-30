@@ -77,10 +77,6 @@
 																<a name='update' onclick="location.href='viewitem.php?ID=<?php echo $row['id'] ?>'" href="#">
 																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
 																</a>
-
-																<a class="green" onclick="location.href='update.php?ID=<?php echo $row['id'] ?>'">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
 																
 																<a class="red" onclick="location.href='invoice.php?ID=<?php echo $row['id'] ?>'">
 																	<i class="fa fa-file-o" aria-hidden="true"></i>

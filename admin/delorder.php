@@ -77,6 +77,9 @@
 																<a class="blue" onclick="location.href='view.php?ID=<?php echo $row['id'] ?>'">
 																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
 																</a>
+																<a class="blue" onclick="location.href='resup.php?ID=<?php echo $row['id'] ?>'">
+																	<i class="fa fa-pencil-square bigger-130"></i>
+																</a>
 
 																<a class="red" href="#">
 																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
