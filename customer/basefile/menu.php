@@ -351,6 +351,15 @@
 								<b class="arrow"></b>
 							</li>
 
+							<li class="">
+								<a href="activity.php">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Activity Items
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
 
 							
 							
