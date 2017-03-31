@@ -17,6 +17,7 @@
         if (mysqli_num_rows($result)==1){
 
             //$cst_id = $_SESSION['csid'];
+            
             //$cst_name = $_SESSION['fname'];
             
             //$log = "INSERT INTO log(id, name, logtime) VALUES('$cst_id','$cst_name', 'sda')";
