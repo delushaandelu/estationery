@@ -1,4 +1,5 @@
 <?php session_start();
+
 class Cart {
     protected $cart_contents = array();
     
