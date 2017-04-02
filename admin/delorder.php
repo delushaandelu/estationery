@@ -13,7 +13,7 @@
 											<div class="pull-right tableTools-container"></div>
 										</div>
 										<div class="table-header">
-											Manage Received Purchase Orders
+											On Delivery Process
 										</div>
 
 										<!-- div.table-responsive -->
@@ -46,7 +46,7 @@
 												<tbody>
 
 												<?php
-													$cid = $_SESSION['cs_id'];
+													//$cid = $_SESSION['cs_id'];
 													include 'basefile/dbConfig.php';
 													//get rows query
 													$query = $db->query("SELECT * FROM orders where delivery='On Delivery' ");
