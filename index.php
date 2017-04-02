@@ -89,23 +89,23 @@
 			<div class="row">
 				<div class="col-sm-4 text-center feature">
 					<i class="fa fa-tablet icon"></i>
-					<h3>Responsive Bootstrap Template</h3>
+					<h3>Responsive For Devices</h3>
 					<p>
-					Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+					You can do business with us using your mobile phone, tablets, laptop and also with your desktop computers.
 					</p>
 				</div>
 				<div class="col-sm-4 text-center feature">
 					<i class="fa fa-pencil icon"></i>
-					<h3>Easy to Customize</h3>
+					<h3>Easy to Buy and Pay</h3>
 					<p>
-					Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+					You can buy items and books very easy by clicking and scrolling, And maximum useability.
 					</p>
 				</div>
 				<div class="col-sm-4 text-center feature">
 					<i class="fa fa-star icon"></i>
-					<h3>Ideal for Apps or Software</h3>
+					<h3>Delivery</h3>
 					<p>
-					Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+					We save your time, you don't need to come to use, we will come for your with in 24HRS by your request and with low of cost.
 					</p>
 				</div>
 			</div>
@@ -116,50 +116,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2 class="sectionTitle">Modern &amp; clean landing page theme</h2>
-					<h3 class="sectionTitle">Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, sure cool.</h3>
+					<h2 class="sectionTitle">Lets Talk Business, We Save Your Time </h2>
+					<h3 class="sectionTitle">Making money is art and working is art and good business is the best art.</h3>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1">
+				<center>
+				<div class="col-md-6 col-md-offset-3">
 					<div class="imgWrap">
 						<img class="img-responsive" src="assets/img/tablet.png"/>
 					</div>
 				</div>
-				<div class="col-md-5">
-					<div class="productFeatures clearfix">
-						<div class="col-xs-2 icon">
-							<span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-trophy fa-stack-1x fa-inverse"></i>
-							</span>
-						</div>
-						<div class="col-xs-10">
-							<h3>Amazing features</h3>
-							<p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
-						</div>
-						<div class="col-xs-2 icon">
-							<span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-cog fa-stack-1x fa-inverse"></i>
-							</span>
-						</div>
-						<div class="col-xs-10">
-							<h3>Fully customizeable</h3>
-							<p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
-						</div>
-						<div class="col-xs-2 icon">
-							<span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-bars fa-stack-1x fa-inverse"></i>
-							</span>
-						</div>
-						<div class="col-xs-10">
-							<h3>Clean &amp; functional layout</h3>
-							<p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
-						</div>
-					</div>
-				</div>
+				</center>
+				
 			</div>
 		</div>
 	</div> <!-- /productWrap -->
@@ -178,9 +147,9 @@
 						<li class="description">All kind of Metarilas</li>
 						<li class="price">Local LKR Price</li>
 						<ul class="features">
-							<li>Phasellizzle brizzle</li>
-							<li>Crizzle aliquizzle</li>
-							<li>And a lot more gizzle</li>
+							<li>Pens and Pencils</li>
+							<li>Foolscap Papers</li>
+							<li>Bristle Boards</li>
 						</ul>
 						<li class="call">
 							<a class="btn btn-success btn-lg" href="customer/">Buy Now</a>
@@ -193,9 +162,9 @@
 						<li class="description">All Kind of Note Books</li>
 						<li class="price">Local LKR Price</li>
 						<ul class="features">
-							<li>Phasellizzle brizzle</li>
-							<li>Crizzle aliquizzle</li>
-							<li>And a lot more gizzle</li>
+							<li>Single Rule Book</li>
+							<li>Double Rule Book</li>
+							<li>Square Rule Book</li>
 						</ul>
 						<li class="call">
 							<a class="btn btn-success btn-lg" href="customer/">Buy Now</a>
@@ -208,9 +177,9 @@
 						<li class="description">All kind of Items</li>
 						<li class="price">Local LKR Price</li>
 						<ul class="features">
-							<li>Phasellizzle brizzle</li>
-							<li>Crizzle aliquizzle</li>
-							<li>And a lot more gizzle</li>
+							<li>Stros</li>
+							<li>Yogurt Cup</li>
+							<li>Stickers Books </li>
 						</ul>
 						<li class="call">
 							<a class="btn btn-success btn-lg" href="customer/">Buy Now</a>
@@ -225,7 +194,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2 class="sectionTitle">What people say</h2>
+					<h2 class="sectionTitle">Partners of E-Stationery</h2>
+					<center>
+					<h3>Great things in business are never done by one person. They're done by a team of people.</h3>
+					</center>
 				</div>
 			</div>
 			<div class="row">
@@ -233,16 +205,36 @@
 					<div class="flexslider">
 						<ul class="slides">
 							<li>
-								<div class="quote">"Etizzle laoreet doggy dope nisl. Dang pulvinizzle, ipsizzle dawg."</div>
-								<div class="author">Martin Nizzle</div>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">H.M.M.S.Herath</div>
 							</li>
 							<li>
-								<div class="quote">"Crazy tellus urna, yo mamma check out this, eleifend you son of a bizzle."</div>
-								<div class="author">Jennifer Aliquizzle</div>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">A.M.L.R.Abeysinghe</div>
 							</li>
 							<li>
-								<div class="quote">"Praesent i saw beyonces tizzles and my pizzle went crizzle turpizzle."</div>
-								<div class="author">William Lorizzle</div>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">H.L.L.Shashika</div>
+							</li>
+							<li>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">M.G.N.T.Maduwanthi</div>
+							</li>
+							<li>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">P.K.T.C.Kaushalya</div>
+							</li>
+							<li>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">K.P.T.S.Chathuranga</div>
+							</li>
+							<li>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">C.M.Meegahapala</div>
+							</li>
+							<li>
+								<div class="quote">"Managing Director & CEO"</div>
+								<div class="author">M.Y.A.Premakumara</div>
 							</li>
 						</ul>
 					</div>
@@ -297,7 +289,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<p>Copyright &copy; 2014 AppBay - Responsive App Landing Page Template. Built by <a href="http://bootstrapbay.com">BootstrapBay</a>. All Rights Reserved</p>
+					<p>Developer <a href="https://www.facebook.com/profile.php?id=100009133570336">Delushaan</a>. All Rights Reserved</p>
 					<p class="social">
 						<a href="https://www.facebook.com/bootstrapbay">
 							<span class="fa-stack fa-lg">
