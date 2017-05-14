@@ -11,7 +11,10 @@
         $_SESSION['fname']= $res1['fullname'];                     
 
         $res2 =  mysqli_fetch_assoc(mysqli_query($db,"select id from user where username = '$username' "));
-        $_SESSION['cs_id']= $res2['id'];       
+        $_SESSION['cs_id']= $res2['id'];
+
+        $res3 =  mysqli_fetch_assoc(mysqli_query($db,"select email from user where username = '$username' "));
+        $_SESSION['email']= $res3['email'];       
 
         $result = mysqli_query($db, 'select * from user where username="'.$username.'" and password="'.$password.'"  ');
         if (mysqli_num_rows($result)==1){

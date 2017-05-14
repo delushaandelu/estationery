@@ -58,7 +58,21 @@ $custRow = $query->fetch_assoc();
         <tr>
             <td colspan="3"></td>
             <?php if($cart->total_items() > 0){ ?>
-            <td class="text-center"><strong>Total <?php echo 'Rs. '.$cart->total().' LKR'; ?></strong></td>
+            <td class="text-center">15% Service Charge will be added</br>
+            
+            <strong>
+            <?php
+            echo"Total Amount : Rs. ". $cart->tot();
+            ?>
+            </br>
+            <?php
+               $serv =  $cart->total() * 15 / 100;
+               echo "Service charge : Rs. ". $serv;
+            ?>
+            </br>Payment Amount <?php 
+            echo 'Rs. '.$cart->total().' LKR'; 
+            $_SESSION['total'] = $cart->total();            
+            ?></strong></td>
             <?php } ?>
         </tr>
     </tfoot>

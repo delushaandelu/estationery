@@ -65,6 +65,9 @@
                         <a href="manageuser.php"><span class="fa fa-pencil"></span> <span class="xn-text">Manage Users</span></a>
                     </li>
                     <li class="xn-openable">
+                        <a href="payments.php"><span class="fa fa-pencil"></span> <span class="xn-text">Payments</span></a>
+                    </li>
+                    <li class="xn-openable">
                         <a href="index.php"><span class="fa fa-pencil"></span> <span class="xn-text">LogOut</span></a>
                     </li>
                     

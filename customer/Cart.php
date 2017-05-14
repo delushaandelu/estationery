@@ -52,6 +52,10 @@ class Cart {
 	 * @return	int
 	 */
 	public function total(){
+		return $this->cart_contents['cart_total']*115/100;
+	}
+
+	public function tot(){
 		return $this->cart_contents['cart_total'];
 	}
     
