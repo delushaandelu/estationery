@@ -124,6 +124,7 @@ Phone:
 																<tr>
 																	<th class="center">Product ID</th>
 																	<th>Item</th>
+																	<th>Quantity</th>
 																	<th class="hidden-xs">Company</th>
 																	<th class="hidden-480">Price</th>
 																	<th>Pages</th>
@@ -136,7 +137,7 @@ Phone:
 																$cid = $_GET['ID'];
 																include 'dbConfig.php';
 																//get rows query
-																$query = $db->query("SELECT order_items.product_id, item.name, item.company, item.price, item.pages, item.color
+																$query = $db->query("SELECT order_items.product_id, order_items.quantity, item.name, item.company, item.price, item.pages, item.color
 																FROM item
 																INNER JOIN order_items ON item.id=order_items.product_id WHERE order_id=$cid; ");
 																if($query->num_rows > 0){ 
@@ -145,6 +146,7 @@ Phone:
 																<tr>
 																	<td><?php echo $row["product_id"]; ?></td>
 																	<td><?php echo $row["name"]; ?></td>
+																	<td><?php echo $row["quantity"]; ?></td>
 																	<td><?php echo $row["company"]; ?></td>
 																	<td><?php echo $row["price"]; ?></td>
 																	<td><?php echo $row["pages"]; ?></td>
@@ -179,8 +181,17 @@ Phone:
 
 													<div class="space-6"></div>
 													<div class="well">
-														Thank you for choosing Ace Company products.
+													<center>
+														Thank you for choosing E-Stationery Service.
 				We believe you will be satisfied by our services.
+				</center>
+				<br/><br/><br/>
+				<center>Following Item Received</center>
+				</br></br>......................................
+				</br> Delivery Charge
+
+				</br></br>......................................                           ........................................
+				</br> Customer Signature                             Delivery Person Signature
 													</div>
 												</div>
 											</div>

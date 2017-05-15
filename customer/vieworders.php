@@ -39,7 +39,7 @@
 														</th>
 														<th class="hidden-480">Status</th>
 
-														<th></th>
+														<th>Invoice</th>
 													</tr>
 												</thead>
 
@@ -74,9 +74,6 @@
 
 														<td>
 															<div class="hidden-sm hidden-xs action-buttons">
-																<a name='update' onclick="location.href='viewitem.php?ID=<?php echo $row['id'] ?>'" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
 																
 																<a class="red" onclick="location.href='invoice.php?ID=<?php echo $row['id'] ?>'">
 																	<i class="fa fa-file-o" aria-hidden="true"></i>

@@ -94,7 +94,7 @@ $custRow = $query->fetch_assoc();
             echo "<a href='#' disabled='disabled'  class='btn btn-success orderBtn'>To Place Order,Order Amount must be more then 1000 LKR <i class='glyphicon glyphicon-menu-right'></i></a>";
         }
         ?>
-        
+        <center>Delivery Charges Will be Added When Items Will be Delivered!</center>
     </div>
 </div>
 
