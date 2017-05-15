@@ -14,7 +14,13 @@
         $_SESSION['cs_id']= $res2['id'];
 
         $res3 =  mysqli_fetch_assoc(mysqli_query($db,"select email from user where username = '$username' "));
-        $_SESSION['email']= $res3['email'];       
+        $_SESSION['email']= $res3['email'];    
+
+        $res4 =  mysqli_fetch_assoc(mysqli_query($db,"select address from user where username = '$username' "));
+        $_SESSION['address']= $res4['address'];   
+
+        $res5 =  mysqli_fetch_assoc(mysqli_query($db,"select tele from user where username = '$username' "));
+        $_SESSION['tele']= $res5['tele'];   
 
         $result = mysqli_query($db, 'select * from user where username="'.$username.'" and password="'.$password.'"  ');
         if (mysqli_num_rows($result)==1){

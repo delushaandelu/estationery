@@ -85,8 +85,16 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $custRow['address']; ?></p>
     </div>
     <div class="footBtn">
-        <a href="index.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
-        <a href="cartAction.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="home.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
+        <?php
+        $enb = $_SESSION['total'];
+        if ($enb > 1000){
+            echo "<a href='cartAction.php?action=placeOrder' class='btn btn-success orderBtn'>Place Order <i class='glyphicon glyphicon-menu-right'></i></a>";
+        }else{
+            echo "<a href='#' disabled='disabled'  class='btn btn-success orderBtn'>To Place Order,Order Amount must be more then 1000 LKR <i class='glyphicon glyphicon-menu-right'></i></a>";
+        }
+        ?>
+        
     </div>
 </div>
 

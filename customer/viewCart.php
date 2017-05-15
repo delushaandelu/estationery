@@ -57,7 +57,7 @@ include('basefile/menu.php');
             <td><a href="index.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a></td>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
-            <td class="text-center"><strong>Total <?php echo 'Rs. '.$cart->total().' LKR'; ?></strong></td>
+            <td class="text-center"><strong>Total <?php echo 'Rs. '.$cart->tot().' LKR'; ?></strong></td>
             <td><a href="checkout.php" class="btn btn-success btn-block">Checkout <i class="glyphicon glyphicon-menu-right"></i></a></td>
             <?php } ?>
         </tr>
