@@ -199,7 +199,16 @@
 									<li class="">
 										<a href="CRBook.php">
 											<i class="menu-icon fa fa-caret-right"></i>
-											CR Books
+											CR Single Rule
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="crsqr.php">
+											<i class="menu-icon fa fa-caret-right"></i>
+											CR Square Rule
 										</a>
 
 										<b class="arrow"></b>

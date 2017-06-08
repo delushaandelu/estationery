@@ -188,7 +188,7 @@ Phone:
 				<br/><br/><br/>
 				<center>Following Item Received</center>
 				</br></br>......................................
-				</br> Delivery Charge
+				</br> Delivery Charges
 
 				</br></br>......................................                           ........................................
 				</br> Customer Signature                             Delivery Person Signature

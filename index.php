@@ -206,35 +206,39 @@
 						<ul class="slides">
 							<li>
 								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">H.M.M.S.Herath</div>
+								<div class="author">H.L.L. Shashika</div>
 							</li>
 							<li>
-								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">A.M.L.R.Abeysinghe</div>
+								<div class="quote">"Marketing Team"</div>
+								<div class="author">K.M.P.P.Pemadasa</div>
 							</li>
 							<li>
-								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">H.L.L.Shashika</div>
-							</li>
-							<li>
-								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">M.G.N.T.Maduwanthi</div>
-							</li>
-							<li>
-								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">P.K.T.C.Kaushalya</div>
-							</li>
-							<li>
-								<div class="quote">"Managing Director & CEO"</div>
+								<div class="quote">"Marketing Team"</div>
 								<div class="author">K.P.T.S.Chathuranga</div>
 							</li>
 							<li>
-								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">C.M.Meegahapala</div>
+								<div class="quote">"Marketing Team"</div>
+								<div class="author">M.Y.A.Premakumara</div>
 							</li>
 							<li>
-								<div class="quote">"Managing Director & CEO"</div>
-								<div class="author">M.Y.A.Premakumara</div>
+								<div class="quote">"Marketing Team"</div>
+								<div class="author">M.G.N.T.Maduwanthi</div>
+							</li>
+							<li>
+								<div class="quote">"Financial Manager"</div>
+								<div class="author">H.M.M.S.Herath</div>
+							</li>
+							<li>
+								<div class="quote">"Financial Manager"</div>
+								<div class="author">P.K.T.C.Kaushalya</div>
+							</li>
+							<li>
+								<div class="quote">"IT Manager"</div>
+								<div class="author">A.M.L.R.Abeysinghe</div>
+							</li>
+							<li>
+								<div class="quote">"IT Manager"</div>
+								<div class="author">C.M.Meegahapala</div>
 							</li>
 						</ul>
 					</div>

@@ -12,7 +12,7 @@
         <?php
 		include 'dbConfig.php';
         //get rows query
-        $query = $db->query("SELECT * FROM item where name='Pens' ORDER BY pages DESC LIMIT 10");
+        $query = $db->query("SELECT * FROM item where name='Pens' ");
         if($query->num_rows > 0){ 
             while($row = $query->fetch_assoc()){
         ?>
